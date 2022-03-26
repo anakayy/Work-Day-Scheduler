@@ -1,8 +1,3 @@
-// Moment script
-var m = moment();
-
-//
-
 // Day, date, and time
 $("#currentDay").text(moment().format("dddd, MMMM Do"));
 
@@ -101,16 +96,4 @@ function renderText() {
   var saveEventText5 = JSON.parse(localStorage.getItem("5:00 pm"));
   $("#17").val("");
   $("#17").val(saveEventText5);
-
-  var saveEventText6 = JSON.parse(localStorage.getItem("6:00 pm"));
-  $("#18").val("");
-  $("#18").val(saveEventText6);
-
-  var saveEventText7 = JSON.parse(localStorage.getItem("7:00 pm"));
-  $("#19").val("");
-  $("#19").val(saveEventText7);
-
-  var saveEventText8P = JSON.parse(localStorage.getItem("8:00 pm"));
-  $("#20").val("");
-  $("#20").val(saveEventText8P);
 }
