@@ -51,10 +51,6 @@ $(".deleteBtn").click(function () {
 
 // Use local storage to store events set to calender
 function renderText() {
-  var saveEventText8 = JSON.parse(localStorage.getItem("8:00 am"));
-  $("#8").val("");
-  $("#8").val(saveEventText8);
-
   var saveEventText9 = JSON.parse(localStorage.getItem("9:00 am"));
   $("#9").val("");
   $("#9").val(saveEventText9);
