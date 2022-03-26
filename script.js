@@ -40,9 +40,6 @@ $(".saveBtn").click(function () {
   eventTime = $(this).siblings(".hour").text();
   console.log(eventTime);
   localStorage.setItem(eventTime, JSON.stringify(eventText));
-
-  colorChange();
-  renderText();
 });
 
 $(".deleteBtn").click(function () {
@@ -50,9 +47,6 @@ $(".deleteBtn").click(function () {
   eventText = $(this).siblings(".input").val();
   eventTime = $(this).siblings(".hour").text();
   localStorage.setItem(eventTime, JSON.stringify(eventText));
-
-  colorChange();
-  renderText();
 });
 
 // Use local storage to store events set to calender
